@@ -12,3 +12,99 @@
    </div> 
 </body>
 </html>
+*
+{
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container
+{
+  /* position:relative; */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+  background-color: cyan;
+  height:220px;
+  width:220px;
+  
+  
+}
+.box
+{
+   background-color: red; 
+   height: 200px;
+   width:200px;
+   /* left:10px;
+   top:10px; */
+   /* position:absolute; */
+   /* animation-name: moving;
+   animation-duration: 4s;
+   animation-timing-function: ease-in-out;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-fill-mode:both; */
+
+   /* shorthand of animation: ; */
+   animation:0.5s ease-in-out 0s infinite alternate /*both*/ paused moving;
+   
+
+}
+.box:hover{
+    animation-play-state: running;
+}
+
+@keyframes moving
+{
+   /* 0% 
+   { top:10px;
+     left:0px;
+    background-color: orange;;
+   }
+    20%
+    {   top:10px;
+        left:1200px;
+        background-color: green;
+    }
+    40%
+    {   top:600px;
+        left:1200px;
+        background-color:pink;
+    }
+    60%
+    {   top:600px;
+        left:10px;
+        background-color: blue;
+    }
+    80%
+    {
+        top:10px;
+        left:0px;
+        background-color: aquamarine;
+    
+    }
+    100%
+    {
+         top:300px;
+        left:500px;  
+        background-color: maroon;
+    } */
+
+   0%
+    {  
+       transform:rotate(0)
+    }
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
